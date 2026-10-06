@@ -226,6 +226,12 @@ function HeroSection() {
         <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           {/* Left */}
           <div>
+            {/* Portrait — mobile & tablet (desktop shows the side panel) */}
+            <img
+              src="/images/dr-aimee-jenkin.jpg"
+              alt="Dr. Aimee Jenkin — Plastic & Reconstructive Surgeon"
+              className="mb-8 h-48 w-48 rounded-2xl border border-line object-cover object-top shadow-card lg:hidden"
+            />
             <div className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-slate-text">
               <span className="h-1.5 w-1.5 rounded-full bg-medic-blue" />
               Accepting new patients · Cape Town
@@ -275,18 +281,19 @@ function HeroSection() {
             </ul>
           </div>
 
-          {/* Right — clean visual panel */}
+          {/* Right — portrait panel with practice card overlay */}
           <div className="hidden lg:block">
             <div className="overflow-hidden rounded-2xl border border-line bg-surface">
-              {/* Image placeholder — clean medical abstract */}
-              <div className="relative aspect-[4/5] w-full bg-gradient-to-b from-medic-blue-light to-white">
+              {/* Real portrait — Dr. Aimee Jenkin (alchimiaclinic.co.za) */}
+              <div className="relative aspect-[4/5] w-full">
+                <img
+                  src="/images/dr-aimee-jenkin.jpg"
+                  alt="Dr. Aimee Jenkin — Plastic & Reconstructive Surgeon"
+                  className="absolute inset-0 h-full w-full object-cover object-top"
+                />
                 <div
                   aria-hidden
-                  className="absolute inset-0"
-                  style={{
-                    backgroundImage:
-                      "radial-gradient(circle at 30% 20%, rgba(26,86,219,0.08) 0, transparent 40%), radial-gradient(circle at 70% 70%, rgba(14,165,233,0.06) 0, transparent 40%)",
-                  }}
+                  className="absolute inset-0 bg-gradient-to-b from-white/30 via-transparent to-white/60"
                 />
                 <div className="relative flex h-full flex-col p-8">
                   <div className="flex items-center justify-between">
@@ -781,6 +788,43 @@ function FacilitySection() {
             surgical result. Two state-of-the-art theatres, uninterrupted
             backup power, and a discrete patient journey — all under one roof.
           </p>
+        </div>
+
+        {/* Real facility photos */}
+        <div className="mt-10 grid gap-4 sm:grid-cols-3">
+          {[
+            {
+              src: "/images/alchimia-sign.jpg",
+              alt: "Alchimia Clinic reception sign — Cosmetic + Surgery",
+              caption: "Alchimia Clinic · 39 Kloof Street, 2nd Floor",
+            },
+            {
+              src: "/images/alchimia-ward.jpg",
+              alt: "Alchimia Clinic four-bed day-hospital recovery ward with nurse",
+              caption: "Four-bed day-hospital · recovery ward",
+            },
+            {
+              src: "/images/medi-spa-interior.jpg",
+              alt: "Cape Town Medi-Spa consulting and treatment room interior",
+              caption: "Cape Town Medi-Spa · 99 Kloof Street",
+            },
+          ].map((img) => (
+            <figure
+              key={img.src}
+              className="overflow-hidden rounded-xl border border-line bg-white shadow-card"
+            >
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface">
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-300 hover:scale-[1.03]"
+                />
+              </div>
+              <figcaption className="border-t border-line px-4 py-3 text-xs font-medium text-slate-muted">
+                {img.caption}
+              </figcaption>
+            </figure>
+          ))}
         </div>
 
         {/* Stats row */}
@@ -1298,26 +1342,18 @@ function BookingSection() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="relative h-40 border-t border-line bg-surface">
+              {/* Real neighbourhood photo — Kloof Street & Table Mountain */}
+              <div className="relative h-40 border-t border-line">
+                <img
+                  src="/images/kloof-street-table-mountain.jpg"
+                  alt="Street view in Gardens, Cape Town with Table Mountain"
+                  className="absolute inset-0 h-full w-full object-cover"
+                />
                 <div
                   aria-hidden
-                  className="absolute inset-0 opacity-50"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(rgba(26,86,219,0.10) 1px, transparent 1px), linear-gradient(90deg, rgba(26,86,219,0.10) 1px, transparent 1px)",
-                    backgroundSize: "28px 28px",
-                  }}
+                  className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent"
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="relative">
-                    <div className="absolute inset-0 animate-ping rounded-full bg-medic-blue/20" />
-                    <div className="relative flex h-10 w-10 items-center justify-center rounded-full bg-medic-blue text-white shadow-md">
-                      <MapPin className="h-4 w-4" />
-                    </div>
-                  </div>
-                </div>
-                <div className="absolute bottom-3 left-3 rounded-md bg-white px-2.5 py-1 text-[11px] font-medium text-navy shadow-sm">
+                <div className="absolute bottom-3 left-3 rounded-md bg-white/95 px-2.5 py-1 text-[11px] font-medium text-navy shadow-sm backdrop-blur">
                   Kloof Street · Gardens · Cape Town
                 </div>
                 <a
