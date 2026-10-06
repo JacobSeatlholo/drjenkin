@@ -25,6 +25,7 @@ import {
   Award,
   GraduationCap,
   Building2,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 
@@ -191,11 +192,11 @@ function StickyHeader() {
                   <div className="space-y-2 text-xs text-slate-muted">
                     <div className="flex items-center gap-2">
                       <ShieldCheck className="h-3.5 w-3.5 text-medic-blue" />
-                      FCS Plast Surg (SA) · HPCSA
+                      FC Plast Surg (SA) · HPCSA
                     </div>
                     <div className="flex items-center gap-2">
                       <MapPin className="h-3.5 w-3.5 text-medic-blue" />
-                      99 Kloof Street, Gardens, Cape Town
+                      Alchimia Clinic · 39 Kloof Street, Gardens
                     </div>
                   </div>
                   <SheetClose asChild>
@@ -235,9 +236,10 @@ function HeroSection() {
             </h1>
 
             <p className="mt-5 max-w-xl text-base leading-relaxed text-slate-muted sm:text-lg text-pretty">
-              Dr. Aimee Jenkin practices at Alchimia Clinic, 99 Kloof Street —
-              combining microsurgical expertise with a measured, personal
-              approach to cosmetic, reconstructive and accessible breast surgery.
+              Dr. Aimee Jenkin practices at Alchimia Clinic on Kloof Street,
+              Gardens, and consults at the Cape Town Medi-Spa — combining
+              microsurgical expertise with a measured, personal approach to
+              cosmetic, reconstructive and accessible breast surgery.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -307,7 +309,10 @@ function HeroSection() {
                         Alchimia Clinic
                       </div>
                       <div className="mt-1 text-sm text-slate-muted">
-                        99 Kloof Street, Gardens, Cape Town
+                        39 Kloof Street, Gardens, Cape Town
+                      </div>
+                      <div className="mt-1.5 text-xs font-medium text-medic-blue">
+                        Consulting also at Cape Town Medi-Spa, 99 Kloof St
                       </div>
                       <Separator className="my-4 bg-line" />
                       <div className="grid grid-cols-2 gap-4 text-sm">
@@ -362,9 +367,10 @@ function ProfileTabs() {
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-muted text-pretty">
             Trained in the public academic tradition and now practicing at
-            Alchimia Clinic in Gardens, Dr. Jenkin brings microsurgical
-            precision to every procedure — from cosmetic refinement to complex
-            reconstructive surgery.
+            Alchimia Clinic in Gardens with consulting rooms at the Cape Town
+            Medi-Spa, Dr. Jenkin brings microsurgical precision to every
+            procedure — from cosmetic refinement to complex reconstructive
+            surgery.
           </p>
         </div>
 
@@ -441,7 +447,7 @@ function ProfileTabs() {
                 <li className="flex items-start gap-3">
                   <Award className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
                   <div>
-                    <div className="font-medium text-navy">FCS Plast Surg (SA)</div>
+                    <div className="font-medium text-navy">FC Plast Surg (SA)</div>
                     <div className="text-xs text-slate-muted">Specialist qualification · 2012</div>
                   </div>
                 </li>
@@ -456,7 +462,7 @@ function ProfileTabs() {
                   <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
                   <div>
                     <div className="font-medium text-navy">Hospital appointments</div>
-                    <div className="text-xs text-slate-muted">Charlotte Maxeke · Netcare Union · Netcare Kuils River</div>
+                    <div className="text-xs text-slate-muted">Charlotte Maxeke (JHB) · Netcare Kuils River (CPT)</div>
                   </div>
                 </li>
               </ul>
@@ -644,7 +650,7 @@ function SpecialtyModal({
                     Considering this procedure?
                   </div>
                   <p className="mt-1 text-sm text-slate-muted">
-                    Book a consultation at 99 Kloof Street to discuss your goals.
+                    Book a consultation at Alchimia Clinic (39 Kloof Street) or the Cape Town Medi-Spa to discuss your goals.
                   </p>
                 </div>
                 <Button
@@ -767,7 +773,7 @@ function FacilitySection() {
         <div className="max-w-3xl">
           <SectionLabel>Facility &amp; Patient Journey</SectionLabel>
           <h2 className="mt-3 text-3xl font-semibold leading-tight tracking-tight-display text-navy sm:text-4xl text-balance">
-            Alchimia Clinic, 99 Kloof Street
+            Alchimia Clinic, 39 Kloof Street
           </h2>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-slate-muted text-pretty">
             A private day-surgery facility built around a single principle:
@@ -780,9 +786,9 @@ function FacilitySection() {
         {/* Stats row */}
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
           {[
-            { value: "2", label: "Operating theatres" },
+            { value: "4 beds", label: "Licensed day-hospital" },
             { value: "100 kVA", label: "Backup generator" },
-            { value: "99", label: "Kloof Street, Gardens" },
+            { value: "39", label: "Kloof Street, Gardens" },
             { value: "Day-case", label: "Discharge model" },
           ].map((s) => (
             <div key={s.label} className="rounded-xl border border-line bg-white p-5">
@@ -827,7 +833,7 @@ function FacilitySection() {
                   step: "1",
                   title: "Initial consultation",
                   detail:
-                    "An unhurried conversation at 99 Kloof Street. History, goals, examination, and an honest discussion of options, risks, and realistic outcomes.",
+                    "An unhurried conversation — at Alchimia Clinic or at the Cape Town Medi-Spa consulting rooms, both on Kloof Street in Gardens. History, goals, examination, and an honest discussion of options, risks, and realistic outcomes.",
                 },
                 {
                   step: "2",
@@ -1008,7 +1014,8 @@ function BookingSection() {
             <p className="mt-4 max-w-xl text-base leading-relaxed text-slate-muted text-pretty">
               Tell us a little about what you're considering and your preferred
               date. Dr. Jenkin's PA will respond within two business days to
-              confirm an appointment at 99 Kloof Street.
+              confirm an appointment — at Alchimia Clinic or the Cape Town
+              Medi-Spa, both on Kloof Street in Gardens.
             </p>
 
             <div className="mt-8 rounded-xl border border-line bg-white p-6 shadow-card sm:p-8">
@@ -1206,10 +1213,10 @@ function BookingSection() {
               <div className="p-6 sm:p-7">
                 <SectionLabel>Location &amp; contact</SectionLabel>
                 <h3 className="mt-3 text-xl font-semibold text-navy">
-                  99 Kloof Street, Gardens
+                  Alchimia Clinic — 39 Kloof Street
                 </h3>
                 <p className="mt-1 text-sm text-slate-muted">
-                  Cape Town, 8005 · South Africa
+                  Gardens, Cape Town, 8001 · South Africa
                 </p>
 
                 <div className="mt-5 space-y-3">
@@ -1217,10 +1224,21 @@ function BookingSection() {
                     <Stethoscope className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
                     <div>
                       <div className="text-[11px] font-medium uppercase tracking-wide text-slate-muted">
-                        Operating from
+                        Surgery &amp; consulting
                       </div>
                       <div className="text-sm font-medium text-navy">
-                        Alchimia Clinic — Day-Surgery Facility
+                        Alchimia Clinic — Licensed day-surgery facility, 39 Kloof St (2nd Floor)
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3 rounded-lg border border-line bg-surface p-3">
+                    <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
+                    <div>
+                      <div className="text-[11px] font-medium uppercase tracking-wide text-slate-muted">
+                        Also consulting at
+                      </div>
+                      <div className="text-sm font-medium text-navy">
+                        Cape Town Medi-Spa — 99 Kloof Street, Gardens
                       </div>
                     </div>
                   </div>
@@ -1235,34 +1253,48 @@ function BookingSection() {
                       </div>
                     </div>
                   </div>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid gap-3 sm:grid-cols-2">
                     <a
-                      href="tel:+27210000000"
+                      href="tel:+27214232085"
                       className="flex items-center gap-2 rounded-lg border border-line bg-surface p-3 transition-colors hover:border-medic-blue/30 hover:bg-medic-blue-light"
                     >
                       <Phone className="h-4 w-4 shrink-0 text-medic-blue" />
                       <div>
                         <div className="text-[11px] font-medium uppercase tracking-wide text-slate-muted">
-                          Phone
+                          Alchimia Clinic
                         </div>
                         <div className="text-sm font-medium text-navy">
-                          +27 21 000 0000
+                          +27 21 423 2085
                         </div>
                       </div>
                     </a>
                     <a
-                      href="mailto:pa@draimeejenkin.co.za"
+                      href="tel:+27214225140"
                       className="flex items-center gap-2 rounded-lg border border-line bg-surface p-3 transition-colors hover:border-medic-blue/30 hover:bg-medic-blue-light"
                     >
-                      <Mail className="h-4 w-4 shrink-0 text-medic-blue" />
+                      <Phone className="h-4 w-4 shrink-0 text-medic-blue" />
                       <div>
                         <div className="text-[11px] font-medium uppercase tracking-wide text-slate-muted">
-                          Email
+                          Cape Town Medi-Spa
                         </div>
-                        <div className="text-sm font-medium text-navy">PA enquiries</div>
+                        <div className="text-sm font-medium text-navy">
+                          +27 21 422 5140
+                        </div>
                       </div>
                     </a>
                   </div>
+                  <a
+                    href="mailto:pa@draimeejenkin.co.za"
+                    className="flex items-center gap-2 rounded-lg border border-line bg-surface p-3 transition-colors hover:border-medic-blue/30 hover:bg-medic-blue-light"
+                  >
+                    <Mail className="h-4 w-4 shrink-0 text-medic-blue" />
+                    <div>
+                      <div className="text-[11px] font-medium uppercase tracking-wide text-slate-muted">
+                        Email
+                      </div>
+                      <div className="text-sm font-medium text-navy">PA enquiries</div>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -1286,10 +1318,10 @@ function BookingSection() {
                   </div>
                 </div>
                 <div className="absolute bottom-3 left-3 rounded-md bg-white px-2.5 py-1 text-[11px] font-medium text-navy shadow-sm">
-                  99 Kloof St · Gardens · Cape Town
+                  Kloof Street · Gardens · Cape Town
                 </div>
                 <a
-                  href="https://maps.google.com/?q=99+Kloof+Street+Gardens+Cape+Town"
+                  href="https://maps.google.com/?q=39+Kloof+Street+Gardens+Cape+Town"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-md bg-white px-2.5 py-1 text-[11px] font-medium text-medic-blue shadow-sm transition-colors hover:bg-medic-blue-light"
@@ -1369,12 +1401,12 @@ function Footer() {
             </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-slate-muted text-pretty">
               Specialist plastic &amp; reconstructive surgery at Alchimia Clinic,
-              99 Kloof Street, Gardens, Cape Town. HPCSA registered,
-              FCS Plast Surg (SA).
+              39 Kloof Street, Gardens, Cape Town, with consulting rooms at the
+              Cape Town Medi-Spa. HPCSA registered, FC Plast Surg (SA).
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
               <span className="rounded-md border border-line bg-white px-2.5 py-1 text-[11px] font-medium text-medic-blue">
-                FCS Plast Surg (SA)
+                FC Plast Surg (SA)
               </span>
               <span className="rounded-md border border-line bg-white px-2.5 py-1 text-[11px] font-medium text-medic-blue">
                 HPCSA Registered
@@ -1418,15 +1450,21 @@ function Footer() {
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
                 <span>
-                  99 Kloof Street, Gardens
+                  Alchimia Clinic, 39 Kloof Street, Gardens
                   <br />
-                  Cape Town, 8005
+                  Cape Town, 8001
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
-                <a href="tel:+27210000000" className="transition-colors hover:text-medic-blue">
-                  +27 21 000 0000
+                <a href="tel:+27214232085" className="transition-colors hover:text-medic-blue">
+                  +27 21 423 2085
+                </a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
+                <a href="tel:+27214225140" className="transition-colors hover:text-medic-blue">
+                  +27 21 422 5140 (Medi-Spa)
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -1452,6 +1490,10 @@ function Footer() {
                 <span>Alchimia Clinic</span>
               </li>
               <li className="flex items-start gap-2">
+                <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
+                <span>Cape Town Medi-Spa</span>
+              </li>
+              <li className="flex items-start gap-2">
                 <HeartPulse className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
                 <span>YourBreast</span>
               </li>
@@ -1461,7 +1503,7 @@ function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-medic-blue" />
-                <span>Netcare Union &amp; Kuils River</span>
+                <span>Netcare Kuils River</span>
               </li>
             </ul>
           </div>
@@ -1482,7 +1524,9 @@ function Footer() {
               Surgeon, and holds the Fellowship of the College of Plastic
               Surgeons of South Africa (FC Plast Surg SA). All surgical
               procedures are performed at Alchimia Clinic, a licensed day-surgery
-              facility at 99 Kloof Street, Gardens, Cape Town.
+              facility at 39 Kloof Street, 2nd Floor, Gardens, Cape Town.
+              Consulting rooms are also at the Cape Town Medi-Spa, 99 Kloof
+              Street, Gardens.
             </p>
             <p className="text-xs leading-relaxed text-slate-muted text-pretty">
               The information on this website is provided for general educational

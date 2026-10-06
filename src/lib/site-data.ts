@@ -39,7 +39,7 @@ export const SPECIALTIES: Specialty[] = [
     category: "Cosmetic & Aesthetic",
     icon: Sparkles,
     overview:
-      "Facial rejuvenation at 99 Kloof Street combines meticulous surgical technique with an artist's eye for proportion and harmony. Every assessment begins with a structural analysis of bone, soft tissue, and skin envelope to ensure results read as a more rested, refined version of you — never 'operated on'. Dr. Jenkin favours conservative, anatomically-led interventions that age gracefully over decades rather than seasonal trends that compromise long-term aesthetics.",
+      "Facial rejuvenation at Alchimia Clinic on Kloof Street combines meticulous surgical technique with an artist's eye for proportion and harmony. Every assessment begins with a structural analysis of bone, soft tissue, and skin envelope to ensure results read as a more rested, refined version of you — never 'operated on'. Dr. Jenkin favours conservative, anatomically-led interventions that age gracefully over decades rather than seasonal trends that compromise long-term aesthetics.",
     procedures: [
       {
         name: "Surgical Facelift & Necklift",
@@ -428,7 +428,7 @@ export const PROFILE_TABS: ProfileTab[] = [
     paragraphs: [
       "Dr. Aimee Jenkin graduated with an MBBCh from the University of the Witwatersrand in 2001, then completed her internship and community service years in the Eastern Cape — a formative period that grounded her in the disciplined, resource-conscious tradition of South African public medicine. Those early years shaped a surgical philosophy that values judgement over technology, mentorship over ego, and the patient in front of you over the protocol on the wall.",
       "She returned to Johannesburg to pursue specialist training in Plastic and Reconstructive Surgery, earning her specialist qualification in 2012. The training was demanding and broad — burns, congenital anomalies, post-oncological reconstruction, hand trauma, and aesthetic surgery were all taught as branches of the same tree. This breadth remains the foundation of her practice today.",
-      "Her philosophy is simple: surgical precision is non-negotiable, but it is not enough on its own. The same operation performed without warmth, without listening, and without an honest conversation about what surgery can and cannot do, is incomplete. Artistry and technicality must coexist with compassion and grounded communication — that is the standard she holds herself to every day at 99 Kloof Street.",
+      "Her philosophy is simple: surgical precision is non-negotiable, but it is not enough on its own. The same operation performed without warmth, without listening, and without an honest conversation about what surgery can and cannot do, is incomplete. Artistry and technicality must coexist with compassion and grounded communication — that is the standard she holds herself to every day, whether consulting at Alchimia Clinic or at the Cape Town Medi-Spa, both on Kloof Street in Gardens.",
     ],
     highlights: [
       { label: "MBBCh", value: "Wits, 2001", icon: ShieldCheck },
@@ -443,13 +443,13 @@ export const PROFILE_TABS: ProfileTab[] = [
     icon: Microscope,
     headline: "Microsurgery, hand reconstruction & aesthetic surgery",
     paragraphs: [
-      "Dr. Jenkin's subspecialty training was built on the unforgiving foundations of microsurgery and hand reconstruction at Charlotte Maxeke Academic Hospital in Johannesburg, with continued clinical engagement at Netcare Union Hospital and Netcare Kuils River. These institutions demand a level of precision and a tolerance for complexity that few training environments can match — and they shape every operation she performs today, from a cosmetic breast augmentation to a complex flap reconstruction.",
-      "Her current clinical practice spans three pillars. At Alchimia Clinic, 99 Kloof Street, she delivers the full spectrum of cosmetic and reconstructive surgery in a private, day-surgery setting. Through the YourBreast collaboration, she offers accessible, transparently-priced breast surgery without compromising on surgeon-led care or theatre quality. And she continues to assist colleagues on complex cases — a habit formed in academic medicine that she has no intention of giving up.",
+      "Dr. Jenkin's subspecialty training was built on the unforgiving foundations of the Wits surgical training circuit, with microsurgery and hand reconstruction at Charlotte Maxeke Academic Hospital in Johannesburg. After completing her specialist training in 2012 she continued to work at Charlotte Maxeke, and in November 2014 relocated to Cape Town, setting up practice at Netcare Kuils River Hospital. These environments demand a level of precision and a tolerance for complexity that few training environments can match — and they shape every operation she performs today, from a cosmetic breast augmentation to a complex flap reconstruction.",
+      "Her current clinical practice spans three pillars. At Alchimia Clinic — a licensed day-surgery facility on Kloof Street in Gardens — she delivers the full spectrum of cosmetic and reconstructive surgery in a private setting. She also consults at the Cape Town Medi-Spa, the long-established medi-spa and wellness destination at 99 Kloof Street. Through the YourBreast collaboration, she offers accessible, transparently-priced breast surgery without compromising on surgeon-led care or theatre quality. And she continues to assist colleagues on complex cases — a habit formed in academic medicine that she has no intention of giving up.",
       "What ties these three pillars together is a single standard: the operation is performed to the same meticulous specification regardless of the price tag or the patient's profile. Skill is not a variable to be tuned to the setting — it is the constant on which the practice is built.",
     ],
     highlights: [
       { label: "Microsurgery", value: "Charlotte Maxeke", icon: Microscope },
-      { label: "Hand Surgery", value: "Netcare Union & Kuils River", icon: Hand },
+      { label: "Cape Practice", value: "Netcare Kuils River, 2014", icon: Hand },
       { label: "Cosmetic Practice", value: "Alchimia Clinic", icon: Sparkles },
       { label: "Accessible Breast Surgery", value: "YourBreast", icon: HeartPulse },
     ],
@@ -485,14 +485,14 @@ export const FACILITY_FEATURES: FacilityFeature[] = [
     icon: Hospital,
     title: "Private Day-Hospital Setup",
     description:
-      "Alchimia Clinic is a fully-licensed day-surgery facility — discreet, dedicated, and built entirely around the patient experience. There are no shared hospital corridors, no impersonal wards, and no rushing. Every detail of the facility is calibrated to feel less like a hospital and more like a calm, considered space for healing.",
+      "Alchimia Clinic is a fully-licensed four-bed day-hospital with two dedicated operating theatres — discreet, dedicated, and built entirely around the patient experience. There are no shared hospital corridors, no impersonal wards, and no rushing. Every detail of the facility is calibrated to feel less like a hospital and more like a calm, considered space for healing.",
     metric: "Boutique patient care",
   },
   {
     icon: Microscope,
     title: "Two State-of-the-Art Theatres",
     description:
-      "Two modern, fully-equipped operating theatres support the full range of Dr. Jenkin's cosmetic and reconstructive caseload. Theatre specifications meet or exceed day-surgery standards, with laminar flow, modern anaesthetic workstations, and the equipment needed for microsurgical work — all on-site at 99 Kloof Street.",
+      "Two modern, fully-equipped operating theatres support the full range of Dr. Jenkin's cosmetic and reconstructive caseload. Theatre specifications meet or exceed day-surgery standards, with laminar flow, modern anaesthetic workstations, and the equipment needed for microsurgical work — all on-site at 39 Kloof Street.",
     metric: "2 theatres",
   },
   {
@@ -518,7 +518,7 @@ export type TrustBadge = {
 
 export const TRUST_BADGES: TrustBadge[] = [
   { label: "HPCSA Registered", icon: ShieldCheck },
-  { label: "FCS Plast Surg (SA)", icon: Stethoscope },
+  { label: "FC Plast Surg (SA)", icon: Stethoscope },
   { label: "Wits Alum", icon: ShieldCheck },
   { label: "Charlotte Maxeke Trained", icon: Microscope },
 ];
@@ -533,13 +533,13 @@ export type ContactDetail = {
 export const CONTACT_DETAILS: ContactDetail[] = [
   {
     icon: Stethoscope,
-    label: "Practice Address",
-    value: "99 Kloof Street, Gardens, Cape Town, 8005",
+    label: "Surgery & Consulting",
+    value: "Alchimia Clinic, 39 Kloof Street, 2nd Floor, Gardens, Cape Town, 8001",
   },
   {
-    icon: ShieldCheck,
-    label: "Clinic",
-    value: "Alchimia Clinic — Day-Surgery Facility",
+    icon: Sparkles,
+    label: "Also Consulting At",
+    value: "Cape Town Medi-Spa, 99 Kloof Street, Gardens, Cape Town, 8001",
   },
   {
     icon: HeartPulse,

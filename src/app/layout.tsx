@@ -12,13 +12,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Dr. Aimee Jenkin — Plastic & Reconstructive Surgeon | Cape Town",
   description:
-    "Specialist Plastic & Reconstructive Surgeon practicing at Alchimia Clinic, 99 Kloof Street, Gardens, Cape Town. Cosmetic, reconstructive and accessible breast surgery. HPCSA registered, FCS Plast Surg (SA).",
+    "Specialist Plastic & Reconstructive Surgeon practicing at Alchimia Clinic (39 Kloof Street, Gardens) with consulting rooms at Cape Town Medi-Spa (99 Kloof Street), Cape Town. Cosmetic, reconstructive and accessible breast surgery. HPCSA registered, FC Plast Surg (SA).",
   keywords: [
     "Plastic Surgeon Cape Town",
     "Reconstructive Surgery",
     "Cosmetic Surgery Cape Town",
     "Alchimia Clinic",
+    "Cape Town Medi-Spa",
     "YourBreast",
+    "39 Kloof Street",
     "99 Kloof Street",
     "Dr Aimee Jenkin",
     "Hand Surgery",
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Dr. Aimee Jenkin — Plastic & Reconstructive Surgeon",
     description:
-      "Specialist practice at Alchimia Clinic, 99 Kloof Street, Gardens, Cape Town.",
+      "Specialist practice at Alchimia Clinic, 39 Kloof Street, Gardens, with consulting rooms at Cape Town Medi-Spa, 99 Kloof Street, Cape Town.",
     type: "website",
     locale: "en_ZA",
   },
